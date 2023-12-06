@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".admin_login.LogOut">
+
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_upper">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back_lower">
+    </RelativeLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG-OUT !!!!!!"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="60dp"/>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:text="LOGOUT"
+        android:drawableEnd="@drawable/baseline_logout_25"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:backgroundTint="#253873"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+
+
+
+
+
+
+</RelativeLayout>

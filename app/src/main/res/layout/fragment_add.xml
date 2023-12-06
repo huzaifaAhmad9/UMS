@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.Add">
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_upper">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back_lower">
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD STUDENT"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="123dp"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/back_lay"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Student Id"
+            android:textColorHint="@color/white"
+            android:id="@+id/stu_id"
+            android:inputType="number"
+            android:drawableEnd="@drawable/id" />
+        <EditText
+            android:textColor="@color/white"
+            android:layout_below="@+id/stu_id"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Student Name"
+            android:textColorHint="@color/white"
+            android:drawableEnd="@drawable/baseline_supervised_user_circle_24"
+            android:id="@+id/stu_name"/>
+        <EditText
+            android:textColor="@color/white"
+            android:layout_below="@+id/stu_name"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Guardian Name"
+            android:drawableEnd="@drawable/baseline_supervised_user_circle_24"
+            android:textColorHint="@color/white"
+            android:id="@+id/stu_Father"/>
+        <EditText
+            android:textColor="@color/white"
+            android:layout_below="@+id/stu_Father"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Student City"
+            android:textColorHint="@color/white"
+            android:id="@+id/stu_city"
+            android:drawableEnd="@drawable/baseline_location_city_24"/>
+        <EditText
+            android:textColor="@color/white"
+            android:layout_below="@+id/stu_city"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Gender"
+            android:textColorHint="@color/white"
+            android:id="@+id/stu_gender"
+            android:drawableEnd="@drawable/sex"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/stu_gender"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:padding="15dp">
+            <TextView
+                android:id="@+id/dept"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Department"
+                android:textColor="@color/white"
+                android:textSize="19dp"/>
+            <Spinner
+                android:textColor="@color/white"
+                android:layout_marginLeft="170dp"
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="ADD"
+        android:drawableEnd="@drawable/plus"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:backgroundTint="#253873"
+        android:layout_marginTop="565dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+
+
+
+
+
+</RelativeLayout>

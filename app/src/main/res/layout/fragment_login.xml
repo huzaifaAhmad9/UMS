@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".admin_login.Login">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/about">
+        </com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:id="@+id/lay1"
+        android:layout_height="220dp"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:textColor="@color/dark_blue"
+            android:text="Efficient control, oversight of university operations \n  Efficiently managing academic operations with user-friendly admin tools"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lay1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SWIPE "
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/style"
+            android:textColor="@color/dark_blue" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/arrows">
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

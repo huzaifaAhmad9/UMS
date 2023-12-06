@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true" android:drawable="@drawable/stu_back" />
+
+    <!-- Default state -->
+    <item android:drawable="@android:color/transparent" />
+</selector>

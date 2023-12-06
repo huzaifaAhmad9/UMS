@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Managing Students Section -->
+    <group android:id="@+id/group_students"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/add"
+            android:title="Add Student"
+            android:icon="@drawable/add"/>
+        <item
+            android:id="@+id/edit"
+            android:title="Display ALL Records"
+            android:icon="@drawable/edit"/>
+        <item
+            android:id="@+id/delete"
+            android:title="Delete Student Record"
+            android:icon="@drawable/delete"/>
+        <item
+            android:id="@+id/search"
+            android:title="Search From Record"
+            android:icon="@drawable/search"/>
+    </group>
+
+    <!-- Managing Teachers Section -->
+    <group android:id="@+id/group_teachers"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/teacher"
+            android:title="Add Teacher"
+            android:icon="@drawable/add"/>
+        <item
+            android:id="@+id/teach"
+            android:title="Display All Teachers"
+            android:icon="@drawable/edit"/>
+        <item
+            android:id="@+id/del"
+            android:title="Delete Teacher Record"
+            android:icon="@drawable/delete"/>
+        <item
+            android:id="@+id/search1"
+            android:title="Search Teacher Record"
+            android:icon="@drawable/search"/>
+    </group>
+
+    <!-- Logout Section -->
+    <item
+        app:showAsAction="ifRoom"
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/baseline_logout_24"/>
+</menu>

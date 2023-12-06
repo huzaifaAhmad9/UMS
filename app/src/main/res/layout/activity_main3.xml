@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_login.MainActivity3">
+
+
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_upper">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back_lower">
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/login"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true">
+        </com.airbnb.lottie.LottieAnimationView>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="235dp"
+            android:layout_marginTop="380dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/back_lay"
+            android:orientation="vertical">
+
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/username"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:hint="Username"
+                android:inputType="text"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColorHint="@color/white"
+                android:drawableRight="@drawable/baseline_supervised_user_circle_24"/>
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/pass"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/baseline_password_24"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:text="LOGIN"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:backgroundTint="#253873"
+            android:layout_marginTop="567dp"
+            android:layout_centerHorizontal="true">
+        </Button>
+
+
+
+
+
+
+
+
+</RelativeLayout>

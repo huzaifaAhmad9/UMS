@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.Delete">
+
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_upper">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back_lower">
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE TEACHER"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="103dp"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/back_lay"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="Teacher Id"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:id="@+id/stu_id"
+            android:drawableEnd="@drawable/id" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="DEL"
+        android:drawableEnd="@drawable/baseline_delete_forever_24"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:backgroundTint="#253873"
+        android:layout_marginTop="290dp"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn"
+        android:id="@+id/result"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+
+
+
+
+</RelativeLayout>

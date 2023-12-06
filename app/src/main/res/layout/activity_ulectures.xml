@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacher.U_Lectures">
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_upper">
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back_lower">
+    </RelativeLayout>
+
+    <TextView
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD LECTURES"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="335dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/back_lay"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+
+                android:id="@+id/etFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter File Name"
+                android:textColorHint="@color/white"
+                android:maxLength="80"
+                android:lines="1"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:layout_above="@id/btnSelectImage"
+                android:layout_marginBottom="16dp"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="68dp"
+                android:text="Select Any File"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"/>
+
+            <ImageView
+                android:id="@+id/selectedImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSelectImage"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:drawableEnd="@drawable/plus"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#253873"
+        android:layout_marginTop="535dp"
+        android:text="Upload" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpload"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>
